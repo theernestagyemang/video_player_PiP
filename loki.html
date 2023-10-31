@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>HTML Video Player</title>
+</head>
+<body>
+    <h1>HTML Video Player Example</h1>
+
+    <main>
+        <p class="error"></p>
+        <video loop src="Loki.S02E01.720p.DSNP.WEB-DL.x265.HEVC.mkv">
+          Your browser does not support the video tag.
+        </video>
+        <input type="range" class="seek" min="0" max="100" value="0" step="1">
+        <div class="buttons">
+          <button class="playPause">Play video</button>
+          <button class="pip">Enter picture-in-picture mode</button>
+        </div>
+    </main>
+     
+
+</body>
+<script src="style.js"></script>
+</html>

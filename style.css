@@ -1,0 +1,84 @@
+*,
+html,
+body {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+body {
+ background-color: #2e3440;
+ height: 100%;
+ width: 100%;
+}
+
+main {
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ width: 90%;
+ max-width: 600px;
+}
+
+.error {
+ color: #fff;
+ text-align: center;
+ font: 0.875em/1.5 Calibri, sans-serif;
+}
+
+video {
+ display: block;
+}
+
+video,
+button {
+ width: 100%;
+}
+
+button {
+ position: relative;
+ padding: 0.375rem 0.75rem;
+ color: #eee;
+ background-color: #009ade;
+ border: 0;
+ line-height: 1.5;
+ border-radius: 0.25rem;
+ outline: none;
+}
+
+button:first-child {
+ margin-bottom: 0.5rem;
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):active {
+ cursor: pointer;
+ background-color: #0079cd;
+ color: #fff;
+}
+
+button:not(:disabled):active {
+ transform: scale(0.95, 0.95);
+}
+
+button:disabled {
+ opacity: 0.75;
+}
+
+.buttons {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ width: 100%;
+ margin-top: 1rem;
+}
+
+@media only screen and (min-width: 370px) {
+ button {
+  width: initial;
+ }
+ button:first-child {
+  margin: 0 1rem 0 0;
+ }
+}
